@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>덕분에 2020년도 행복하게 보냈습니다 :)</title>
+
+    <link rel="shortcut icon" href="https://toppng.com/public/uploads/preview/kiss-emoji-icon-2-11536089118tuqgqbuhts.png">
+
+    <meta property="og:image" content="https://www.christmastreeassociation.org/wp-content/uploads/2016/06/multiple-christmas-trees-in-one-household-800x400.jpg">
+    <meta property="og:title" content="하니의 카드">
+    <meta property="og:description" content="2020 수고많았어">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Jua', sans-serif;
+        }
+
+        body {
+            background-color: rgb(174, 116, 189);
+        }
+
+        .envelop {
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+        }
+
+        .envelop_msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter_close {
+            display: block;
+        }
+
+        .letter_open {
+            display: none;
+        }
+
+        .hani {
+            width: 200px;
+            height: 200px;
+
+            background-image: url('file:///Users/ehanii/Downloads/IMG_1233.JPG');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+            border-radius: 100px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 5px 0px;
+        }
+
+        .letter_msg {
+            color: white;
+            text-align: center;
+
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .msgbox {
+            background-color: ivory;
+
+            width: 300px;
+            margin: auto;
+
+            color: rgb(174, 116, 189);
+
+            padding: 30px;
+
+            font-size: 20px;
+            line-height: 30px;
+
+            box-shadow: 0px 0px 5px 0px;
+
+            text-align: center;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .msgbox {
+                width: 300px;
+                padding: 20px;
+            }
+
+            .hani {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .envelop {
+                margin: 150px auto 0px auto;
+            }
+        }
+
+
+
+        body {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter_close")[0].style.display = 'none'
+            document.getElementsByClassName("letter_open")[0].style.display = 'block'
+        }
+
+        function go_hani() {
+            alert('히힣 사랑합니다')
+            window.location.href='https://www.youtube.com/watch?v=XaaZjDFEtKw&t=3051s'
+        }
+    </script>
+</head>
+
+<body>
+    <div class="letter_close">
+        <div class="envelop" onclick="open_letter()"></div>
+        <h2 class="envelop_msg">봉투를 열어봐!</h2>
+    </div>
+    <div class="letter_open">
+        <div class="hani" onclick="go_hani()"></div>
+        <h1 class="letter_msg">2020년 수고 많았어!</h1>
+        <div class="msgbox">
+            한 해 동안 너무 고생했고, <br />
+            사랑해 <br />
+            <p class="from">2020년 하니가</p>
+        </div>
+    </div>
+
+</body>
+</html>
